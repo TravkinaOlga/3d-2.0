@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Login Form</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <button id="show-login">Login</button>
+        </div>
+    </header>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <form action="/" method="POST" class="popup-form" id="form" data-netlify="true">
+                <div class="form-validation">
+                    <label for="email">Email<input type="text" class="popup-input" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-validation">
+                    <label for="password">Password<input type="password" class="popup-input" id="password" name="password" placeholder="Enter your password" minlength="6" required>
+                </div>
+                <div id="error" class="error">
+                    <span id="errorMessage">Error message</span>
+                </div>
+                <input type="submit" class="popup-input-btn" id="submit" value="Sign Up">
+                <button class="popup-showPassword" id="showPassword">Show password</button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
